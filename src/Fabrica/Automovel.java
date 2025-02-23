@@ -1,6 +1,6 @@
 package Fabrica;
 
-public interface Carro {
+public interface Automovel {
     int getHorsepower();
     String getTipoCombustivel();
     String getCor();

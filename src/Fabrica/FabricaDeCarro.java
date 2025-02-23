@@ -1,6 +1,5 @@
 package Fabrica;
 
 public interface FabricaDeCarro {
-        Carro createSedan();
-        Carro createSUV();
+        <T extends Automovel> T criaAutomovel(Class<T> tipo);
 }

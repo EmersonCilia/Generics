@@ -1,11 +1,11 @@
 package Fabrica;
 
-public class SUV implements Automovel {
+public class Caminhao implements Automovel {
     private int horsepower;
     private String tipoCombustivel;
     private String cor;
 
-    public SUV(int horsepower, String tipoCombustivel, String cor) {
+    public Caminhao(int horsepower, String tipoCombustivel, String cor) {
         this.horsepower = horsepower;
         this.tipoCombustivel = tipoCombustivel;
         this.cor = cor;

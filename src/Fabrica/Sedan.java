@@ -1,6 +1,6 @@
 package Fabrica;
 
-public class Sedan implements Carro {
+public class Sedan implements Automovel {
     private int horsepower;
     private String tipoCombustivel;
     private String cor;
@@ -31,4 +31,3 @@ public class Sedan implements Carro {
         return String.format("%d HP, %s, %s", horsepower, tipoCombustivel, cor);
     }
 }
-
