@@ -28,6 +28,6 @@ public class Sedan implements Automovel {
 
     @Override
     public String toString() {
-        return String.format("%d HP, %s, %s", horsepower, tipoCombustivel, cor);
+        return String.format("Sedan, %d HP, %s, %s", horsepower, tipoCombustivel, cor);
     }
 }

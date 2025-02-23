@@ -28,6 +28,6 @@ public class SUV implements Automovel {
 
     @Override
     public String toString() {
-        return String.format("%d HP, %s, %s", horsepower, tipoCombustivel, cor);
+        return String.format("SUV, %d HP, %s, %s", horsepower, tipoCombustivel, cor);
     }
 }

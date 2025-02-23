@@ -28,6 +28,6 @@ public class Caminhao implements Automovel {
 
     @Override
     public String toString() {
-        return String.format("%d HP, %s, %s", horsepower, tipoCombustivel, cor);
+        return String.format("Caminhão, %d HP, %s, %s", horsepower, tipoCombustivel, cor);
     }
 }

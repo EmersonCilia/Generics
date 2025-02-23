@@ -1,18 +1,22 @@
 import Concessionarias.*;
 import Fabrica.*;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
         FabricaDeCarro fabricaBMW = new BMW();
         FabricaDeCarro fabricaFord = new Ford();
         FabricaDeCarro fabricaToyota = new Toyota();
 
-        Automovel bmwSedan = fabricaBMW.criaAutomovel(Sedan.class);
-        Automovel fordSUV = fabricaFord.criaAutomovel(SUV.class);
-        Automovel toyotaSedan = fabricaToyota.criaAutomovel(Caminhao.class);
+        List<Automovel> Automoveis = new ArrayList<>();
 
-        System.out.println("BMW Sedan: " + bmwSedan);
-        System.out.println("ford SUV: " + fordSUV);
-        System.out.println("toyota Caminhao: " + toyotaSedan);
+        Automoveis.add(fabricaBMW.criaAutomovel(Sedan.class));
+        Automoveis.add(fabricaFord.criaAutomovel(SUV.class));
+        Automoveis.add(fabricaToyota.criaAutomovel(Caminhao.class));
+
+        for (Automovel automovel : Automoveis) {
+            System.out.println(automovel);
+        }
     }
 }
